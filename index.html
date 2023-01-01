@@ -29,6 +29,8 @@
             <i class="fas fa-ghost me-2"></i>
             <span class="d-none d-lg-inline"> GHOST ADMIN </span>
           </h1>
+
+          <!-- Start Controls Section -->
           <div class="list-group text-center text-lg-start">
             <span class="list-group-item disabled d-none d-lg-block">
               <small>CONTROLS</small>
@@ -37,7 +39,10 @@
               <i class="fas fa-home"></i>
               <span class="d-none d-lg-inline">Dashboard</span>
             </a>
-            <a href="/users.html" class="list-group-item list-group-item-ation">
+            <a
+              href="/users.html"
+              class="list-group-item list-group-item-action"
+            >
               <i class="fas fa-users"></i>
               <span class="d-none d-lg-inline">Users</span>
               <span
@@ -54,6 +59,8 @@
               <span class="d-none d-lg-inline">Reports</span>
             </a>
           </div>
+          <!-- End Control Section -->
+          <!-- Start Action Section -->
           <div class="list-group mt-4 text-center text-lg-start">
             <span class="list-group-item disabled d-none d-lg-block">
               <small>ACTIONS</small>
@@ -87,17 +94,19 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="#" class="dropdown-item">
+                    <a href="#" class="dropdown-item text-dark action">
                       <!-- User Profile -->
                       <div data-bs-toggle="modal" data-bs-target="#signInModal">
+                        <i class="fas fa-user me-3"></i>
                         Sign In
                       </div>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-item">
+                    <a href="#" class="dropdown-item text-dark">
                       <!-- Logout -->
                       <div data-bs-toggle="modal" data-bs-target="#signUpModal">
+                        <i class="fas fa-user-plus me-2"></i>
                         Sign Up
                       </div>
                     </a>
@@ -121,6 +130,8 @@
                 </div>
               </div>
             </div>
+            <!-- End Action Section -->
+            <!-- Start Quick Section -->
             <div class="row flex-column flex-lg-row">
               <h2 class="h6 text-white-50">QUICK START</h2>
 
@@ -169,6 +180,8 @@
                 </div>
               </div>
             </div>
+            <!-- End Quick Section -->
+            <!-- Start Location Section -->
             <div class="row mt-4 flex-column flex-lg-row">
               <div class="col">
                 <h2 class="h6 text-white-50">LOCATION</h2>
@@ -194,6 +207,8 @@
                   </div>
                 </div>
               </div>
+              <!-- End Location Section -->
+              <!-- Start Data Section -->
               <div class="col">
                 <h2 class="h6 text-white-50">DATA</h2>
 
@@ -253,13 +268,13 @@
         </footer>
       </div>
     </div>
-
+    <!-- End Data Section -->
     <!-- Start Sign Up Modal -->
     <div class="modal fade" id="signUpModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div
-            class="bg-white mx-auto rounded shadow-sm border mt-4 p-4"
+            class="bg-white mx-auto rounded shadow-sm border mt-5 p-3"
             style="width: 400px"
           >
             <form action="">
@@ -274,11 +289,9 @@
 
               <div class="form-group">
                 <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <span class="fa fa-user p-2"></span>
-                    </span>
-                  </div>
+                  <span class="input-group-text">
+                    <span class="fa fa-user"></span>
+                  </span>
                   <input
                     type="text"
                     class="form-control"
@@ -289,11 +302,9 @@
 
               <div class="form-group mt-3">
                 <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <span class="fas fa-envelope p-2"></span>
-                    </span>
-                  </div>
+                  <span class="input-group-text">
+                    <span class="fas fa-envelope"></span>
+                  </span>
                   <input
                     type="email"
                     class="form-control"
@@ -304,11 +315,9 @@
 
               <div class="form-group mt-3">
                 <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <span class="fa fa-lock p-2"></span>
-                    </span>
-                  </div>
+                  <span class="input-group-text">
+                    <span class="fa fa-lock"></span>
+                  </span>
                   <input
                     type="password"
                     class="form-control"
@@ -319,11 +328,9 @@
 
               <div class="form-group mt-3">
                 <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <span class="fas fa-lock p-2"></span>
-                    </span>
-                  </div>
+                  <span class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                  </span>
                   <input
                     type="password"
                     class="form-control"
@@ -333,8 +340,12 @@
               </div>
 
               <div class="form-group mt-3">
-                <label class="form-check-label">
-                  <input type="checkbox" required="required" />
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    required="required"
+                    class="form-check-input"
+                  />
                   I accept the
                   <a href="#" class="text-success text-decoration-none"
                     >Terms of Use</a
@@ -343,18 +354,18 @@
                   <a href="#" class="text-success text-decoration-none"
                     >Privacy Policy.</a
                   >
-                </label>
+                </div>
               </div>
 
-              <div class="form-group mt-3 mb-2 text-center">
-                <button class="btn btn-outline-danger" data-bs-dismiss="modal">
-                  Cancel
+              <div class="form-group mt-3 mb-3 text-center">
+                <button type="submit" class="btn btn-success px-4">
+                  <i class="fas fa-paper-plane me-2"></i>
+                  Sign Up
                 </button>
-                <button class="btn btn-success px-4">Sign Up</button>
               </div>
             </form>
           </div>
-          <p class="text-success text-center mt-3 mb-4">
+          <p class="text-success text-center mt-2 mb-4">
             Already have an account?
             <a
               href="#"
@@ -367,7 +378,7 @@
         </div>
       </div>
     </div>
-
+    <!-- End Sign Up Modal -->
     <!-- Start Sign In Modal -->
     <div class="modal fade" id="signInModal">
       <div class="modal-dialog">
@@ -380,14 +391,12 @@
               <div class="form-group text-center">
                 <div class="h2 fw-bold text-dark">Sign In</div>
               </div>
-
-              <div class="form-group mt-3">
+              <hr />
+              <div class="form-group mt-4">
                 <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <span class="fas fa-envelope p-2"></span>
-                    </span>
-                  </div>
+                  <span class="input-group-text">
+                    <span class="fas fa-envelope"></span>
+                  </span>
                   <input
                     type="email"
                     class="form-control"
@@ -398,11 +407,9 @@
 
               <div class="form-group mt-3">
                 <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <span class="fa fa-lock p-2"></span>
-                    </span>
-                  </div>
+                  <span class="input-group-text">
+                    <span class="fa fa-lock"></span>
+                  </span>
                   <input
                     type="password"
                     class="form-control"
@@ -414,7 +421,11 @@
               <div class="form-group mt-3 text-center">
                 <div class="row">
                   <label class="form-check-label col">
-                    <input type="checkbox" required="required" />
+                    <input
+                      type="checkbox"
+                      required="required"
+                      class="form-check-input"
+                    />
                     Remember me
                   </label>
                   <div class="col">
@@ -429,15 +440,15 @@
                 </div>
               </div>
 
-              <div class="form-group mt-3 mb-3 text-center">
-                <button class="btn btn-outline-danger" data-bs-dismiss="modal">
-                  Cancel
+              <div class="form-group mt-4 mb-3 text-center">
+                <button type="submit" class="btn btn-success px-4">
+                  <i class="fas fa-key me-2"></i>
+                  Sign In
                 </button>
-                <button class="btn btn-success px-4">Sign In</button>
               </div>
             </form>
           </div>
-          <p class="text-success text-center mt-3 mb-5">
+          <p class="text-success text-center mt-4 mb-5">
             Not a member?
             <a
               href="#"
@@ -450,18 +461,18 @@
         </div>
       </div>
     </div>
-
+    <!-- End Sign In Modal -->
     <!-- Start Forgot Password -->
     <div class="modal fade" id="forgotPassword">
       <div class="modal-dialog">
         <div class="modal-content">
           <div
-            class="mx-auto my-5 p-5 bg-white rounded border border-secondary"
+            class="mx-auto my-5 p-5 bg-white rounded border border-secondary shadow-sm"
             style="width: 400px"
           >
             <form action="">
               <div class="form-group mb-4">
-                <h2 class="text-center mb-4">Forget Password</h2>
+                <h2 class="text-center text-danger mb-4">Forgot Password!</h2>
                 <small class="text-left">
                   Enter your e-mail address and we'll send you a link to reset
                   your password.
@@ -479,13 +490,16 @@
               </div>
               <hr />
               <div class="form-group text-center mt-4">
-                <div class="btn btn-primary px-4">SUBMIT</div>
+                <button type="reset" class="btn btn-success px-4">
+                  Reset Password
+                </button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <!-- End Forgot Password -->
 
     <!-- JavaScript Bundle with Popper -->
     <script
