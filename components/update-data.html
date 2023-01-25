@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Data</title>
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      body {
+        background: url(../img/background.jpeg);
+        background-size: cover;
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row my-3 g-0">
+        <div class="col text-start">
+          <a href="../index.html">
+            <span title="Previous Page" style="width: 50px; height: 50px">
+              <i class="fas fa-arrow-left"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- end nav -->
+    <div class="container mt-3" style="height: 650px">
+      <div class="row">
+        <nav class="col-2">
+          <ul class="list-group text-center">
+            <li class="list-group-item active">
+              
+              <span class="ms-2 d-none d-lg-inline">
+                <a href="../index.html" class="text-light text-decoration-none">
+                  <i class="fas fa-home"></i>
+                  Home</a>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <span class="ms-2 d-none d-lg-inline">
+                <a href="../components/profile_card.html" class="text-dark text-decoration-none">
+                  <i class="fas fa-user"></i>
+                  Profile</a>
+              </span>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <span class="ms-2 d-none d-lg-inline">
+                <a href="../components/users.html" class="text-dark text-decoration-none">
+                  <i class="fas fa-users"></i>
+                  Users</a>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-envelope"></i>
+              <span class="ms-2 d-none d-lg-inline">Contact</span>
+            </li>
+          </ul>
+        </nav>
+        <!-- nav end -->
+        <main class="col-10">
+          <div class="row flex-column flex-lg-row">
+            <div class="col mb-3" id="addUser">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="text-secondary">Update User Data</h2>
+                </div>
+                <div class="card-body">
+                  <form action="">
+                    <div class="form-group mt-3">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" class="form-control" />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" class="form-control" />
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3">
+                      Updated
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col" id="userList">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="text-secondary">Users Table</h2>
+                </div>
+                <div class="card-body">
+                  <table class="table mt-1">
+                    <thead class="text-secondary">
+                      <tr>
+                        <th>
+                          <i class="fas fa-hashtag d-none d-lg-inline"></i>
+                          Id
+                        </th>
+                        <th>
+                          <i class="fas fa-user d-none d-lg-inline me-1"></i
+                          >Name
+                        </th>
+                        <th>
+                          <i
+                            class="fas fa-envelope d-none d-lg-inline me-1"
+                          ></i>
+                          Email
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-danger">
+                      <tr>
+                        <td>01</td>
+                        <td>Alice</td>
+                        <td>alice.official@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>02</td>
+                        <td>Bob</td>
+                        <td>bob2023@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>03</td>
+                        <td>Lisa</td>
+                        <td>lisa@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>04</td>
+                        <td>Jackson</td>
+                        <td>jackson@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
